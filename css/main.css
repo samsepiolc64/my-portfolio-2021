@@ -18,7 +18,7 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .toggle.active {
@@ -56,7 +56,7 @@ section {
      object-fit: cover;
 }
 
-.banner .contentBx {
+.sidebar, .contentBx {
   position: absolute;
   top: 0;
   right: 0;
@@ -74,7 +74,7 @@ section {
   padding: 100px;
 }
 
-.banner .contentBx .logoText {
+.sidebar .logoText, .contentBx .logoText {
   position: absolute;
   top: 40px;
   left: 100px;
@@ -86,7 +86,7 @@ section {
   padding: 0 3px;
 }
 
-.banner .contentBx .btn {
+.sidebar .btn, .contentBx .btn {
   background: #00bcd4;
   color: #fff;
   padding: 10px 30px;
@@ -96,27 +96,99 @@ section {
   letter-spacing: 2px;
 }
 
-.banner .contentBx h4 {
+.sidebar h4, .contentBx h4 {
   font-size: 1.5em;
   color: #333;
   font-weight: 300;
 }
 
-.banner .contentBx h4 span {
+.sidebar h4 span, .contentBx h4 span {
   color: #00bcd4;
   font-size: 1.5em;
   font-weight: 700;
 }
 
-.banner .contentBx h2 {
+.sidebar h2, .contentBx h2 {
   font-size: 3em;
   color: #333;
   line-height: 1em;
 }
 
-.banner .contentBx p {
+.sidebar p, .contentBx p {
   font-size: 1.1em;
   margin: 20px 0;
   font-weight: 300;
+}
+
+.banner .sci {
+  position: absolute;
+  left: 100px;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar {
+  position: fixed;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding: 40px;
+  z-index: 100;
+  right: -100%;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  margin: 10px 0;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sidebar ul li a:hover {
+  color: #00bcd4;
 }
 /*# sourceMappingURL=main.css.map */
