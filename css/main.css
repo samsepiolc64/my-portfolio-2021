@@ -489,4 +489,75 @@ section {
   margin: 0;
   font-size: 16px;
 }
+
+@media (max-width: 950px) {
+  .banner .imgSidebar {
+    display: none;
+  }
+  .sidebar, .contentBx {
+    width: 100%;
+    padding: 40px;
+  }
+  .sidebar .logoText, .contentBx .logoText {
+    left: 40px;
+  }
+  .sidebar .sci, .contentBx .sci {
+    left: 40px;
+  }
+  .sidebar ul li a, .contentBx ul li a {
+    font-size: 1.5em;
+  }
+  section {
+    padding: 40px;
+  }
+  .about .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10px;
+  }
+  .about .content .textBx {
+    min-width: 100%;
+    width: 100%;
+  }
+  .about .content .imgBx {
+    margin-left: 0;
+  }
+  .services .content .servicesBx {
+    padding: 30px 20px;
+    max-width: 340px;
+    margin: 10px;
+  }
+  .contact .contactForm {
+    width: 100%;
+  }
+  .contact .contactForm .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contact .contactForm .row .col50 {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 790px) {
+  .services .content .servicesBx {
+    padding: 30px 20px;
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .work .content .workBx {
+    padding: 30px 20px;
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */

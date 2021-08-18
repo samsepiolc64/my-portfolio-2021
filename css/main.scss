@@ -428,3 +428,109 @@ section {
         font-size: 16px;
     }
 }
+
+@media (max-width:950px) {
+    .banner {
+        .imgSidebar {
+            display: none;
+        }
+        @at-root .sidebar, .contentBx {
+            width: 100%;
+            padding: 40px;
+
+            .logoText {
+                left: 40px;
+            }
+
+            .sci {
+                left: 40px;
+            }
+
+            ul li a {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    section {
+        padding: 40px;
+    }
+
+    .about {
+
+        .content {
+            flex-direction: column;
+            margin-top: 10px;
+
+            .textBx {
+                min-width: 100%;
+                width: 100%;
+            }
+
+            .imgBx {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .services {
+
+        .content {
+
+            .servicesBx {
+                padding: 30px 20px;
+                max-width: 340px;
+                margin: 10px;
+            }
+        }
+    }
+
+
+
+    .contact {
+
+        .contactForm {
+            width: 100%;
+
+            .row {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                .col50 {
+                    width: 100%;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:790px) {
+    .services {
+
+        .content {
+
+            .servicesBx {
+                padding: 30px 20px;
+                max-width: 100%;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .work {
+
+        .content {
+
+            .workBx {
+                padding: 30px 20px;
+                max-width: 100%;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    }
+
+}
